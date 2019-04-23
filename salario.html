@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="len">
+    <head>
+        <title>Salario</title>
+
+    </head>
+    <body>
+        <script>
+            var sueldo, diaUno, diaDos, diaTres, diaCuatro, diaCinco, horasTrabajadas, valor;
+            diaUno=parseInt(prompt("Ingresar las horas trabajadas en el Dia1: "));
+            diaDos=parseInt(prompt("Ingresar las horas trabajadas en el Dia2: "));
+            diaTres=parseInt(prompt("Ingresar las horas trabajadas en el Dia3: "));
+            diaCuatro=parseInt(prompt("Ingresar las horas trabajadas en el Dia4: "));
+            diaCinco=parseInt(prompt("Ingresar las horas trabajadas en el Dia5: "));
+            valor=parseInt(prompt("Ingrese el valor monetario por hora: "));
+            if (diaUno<=24 && diaDos<=24 && diaTres<=24 && diaCuatro<=24 && diaCinco<=24 ){
+		horasTrabajadas = diaUno + diaDos + diaTres + diaCuatro + diaCinco;
+	}
+	else {
+		alert ("El rango de horas en el día esta incorrecto y no permite realizar el calculo. ");
+	}
+	
+	sueldo = horasTrabajadas * valor;
+	
+	alert ("El numero de horas trabajas es: " + horasTrabajadas);
+	
+	alert ("Su sueldo es: " + sueldo);
+        </script>
+    </body>
+</html>
